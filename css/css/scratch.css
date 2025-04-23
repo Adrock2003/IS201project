@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+  }
+  
+  nav {
+    background-color: #002E5D;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-image: url('../assets/img/BYUheader.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  
+  .image-block {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-block img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content-block {
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: white;
+    border-left: 6px solid #002E5D;
+  }
+  
+  
