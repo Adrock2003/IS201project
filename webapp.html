@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dad Joke Generator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .container {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 700px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #007BFF;
+    }
+
+    #joke {
+      font-size: 1.25rem;
+      color: #555;
+      margin: 1.5rem 0;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dad Joke Generator</h1>
+    <p id="joke">Click the button to get a dad joke!</p>
+    <button onclick="generateJoke()">Tell me a joke</button>
+  </div>
+
+  <script>
+    const jokes = [
+      "I'm afraid for the calendar. Its days are numbered.",
+      "Why don't skeletons fight each other? They don't have the guts.",
+      "What do you call cheese that isn't yours? Nacho cheese.",
+      "Why did the scarecrow win an award? Because he was outstanding in his field.",
+      "I'm reading a book on anti-gravity. It's impossible to put down!",
+      "I only know 25 letters of the alphabet. I don't know y.",
+      "Why couldn't the bicycle stand up by itself? It was two tired.",
+      "I used to play piano by ear, but now I use my hands.",
+      "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+      "Why did the math book look sad? Because it had too many problems."
+    ];
+
+    function generateJoke() {
+      const joke = jokes[Math.floor(Math.random() * jokes.length)];
+      document.getElementById('joke').textContent = joke;
+    }
+  </script>
+</body>
+</html>
